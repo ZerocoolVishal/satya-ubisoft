@@ -36,7 +36,8 @@ AppAsset::register($this);
 
 <footer class="footer bg-white text-center">
     <div class="container">
-        <p class="pull-left">by Satyajeet Wale for <b>Ubisoft</b></p>
+        <span class="pull-left">by Satyajeet Wale for <b>Ubisoft</b></span>
+        <p><small>Phone : <?= Html::a('7066136466', 'tel:7066136466') ?> | Email : <?= Html::mailto('satyawale4437@gmail.com', 'satyawale4437@gmail.com') ?></small></p>
     </div>
 </footer>
 

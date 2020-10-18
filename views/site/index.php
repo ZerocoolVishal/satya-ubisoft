@@ -6,7 +6,7 @@
 
 $this->registerJsFile('@web/js/main.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
 
-$this->title = 'My Yii Application';
+$this->title = 'Satyajeet Wale - Ubisoft';
 ?>
 <div class="site-index">
 
