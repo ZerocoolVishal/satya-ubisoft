@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use yii\web\UploadedFile;
 
 /**
  * This is the model class for table "tbl_product".
@@ -15,6 +16,10 @@ use Yii;
  */
 class Product extends \yii\db\ActiveRecord
 {
+
+    /* @var UploadedFile */
+    public $imageFile;
+
     /**
      * {@inheritdoc}
      */
@@ -31,6 +36,7 @@ class Product extends \yii\db\ActiveRecord
         return [
             [['title', 'description', 'image'], 'required'],
             [['created_at'], 'safe'],
+            [['imageFile'], 'file', 'extensions' => 'png, jpg'],
             [['title'], 'string', 'max' => 100],
             [['description', 'image'], 'string', 'max' => 255],
         ];
