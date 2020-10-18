@@ -7,7 +7,7 @@ $this->title = 'My Yii Application';
 <div class="site-index">
 
     <div class="mt-3 mb-3 text-right">
-        <?= \yii\bootstrap4\Html::a('Item Registration', [''], ['class' => 'h5']) ?>
+        <?= \yii\bootstrap4\Html::a('Item Registration', ['site/item-registration'], ['class' => 'h5']) ?>
     </div>
 
     <div class="row" id="products-container">
